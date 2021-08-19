@@ -4,3 +4,9 @@ DatabaseRule.java
  DatabaseRule
 EndangeredAnimalsTest.java
  EndangeredAnimalsTest
+RangersTest.java
+ RangersTest
+SightingsTest.java
+ SightingsTest
+LocationsTest.java
+ LocationsTest

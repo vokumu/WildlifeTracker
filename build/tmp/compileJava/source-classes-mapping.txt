@@ -6,3 +6,9 @@ Animals.java
  Animals
 DatabaseManagement.java
  DatabaseManagement
+Locations.java
+ Locations
+Rangers.java
+ Rangers
+Sightings.java
+ Sightings
