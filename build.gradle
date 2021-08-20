@@ -1,11 +1,13 @@
 plugins {
     id 'java'
+    id 'application'
 }
-
-group 'com.ruth.wildlife-tracker'
+group 'org.example'
 version '1.0-SNAPSHOT'
 
+mainClassName = 'App'
 sourceCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
@@ -13,12 +15,10 @@ repositories {
 
 dependencies {
     implementation 'junit:junit:4.13.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
     implementation "com.sparkjava:spark-core:2.9.3"
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
     implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
     implementation("com.sparkjava:spark-template-handlebars:2.5.5")
-    implementation group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
-    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
+    implementation 'org.sql2o:sql2o:1.5.4'
 }
