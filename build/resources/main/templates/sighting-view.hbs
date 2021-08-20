@@ -1,4 +1,17 @@
 {{#partial "content"}}
+    <div style="" class="p-5 mb-5">
+        <div class="container pt-10 pb-12 pt-md-14 pb-md-16">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <!-- /nav -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <div class="container">
     <div class="views sightings">
         <h1>Sightings</h1>
         <hr>
@@ -7,28 +20,28 @@
 
             {{#if sightings}}
                 <div class="col-md-3">
-                    <h3>Time</h3>
+                    <p>Time</p>
                     <hr>
                     {{#each sightings as |s|}}
-                        <h3>{{s.time}}</h3>
+                        <p>{{s.time}}</p>
                     {{/each}}
                 </div>
                 <div class="col-md-3">
-                    <h3>Animal</h3>
+                    <p>Animal</p>
                     <hr>
                     {{#each animals as |a|}}
-                        <h3>{{a}}</h3>
+                        <p>{{a}}</p>
                     {{/each}}
 
                 </div>
 
             {{else}}
-                <h1>No sightings!! Create some <a href="/create/sighting">here</a> </h1>
+                <p>No sightings!! Create some <a href="/create/sighting">here</a> </p>
 
             {{/if}}
 
         </div>
     </div>
-
+    </div>
 {{/partial}}
 {{> layout.hbs}}

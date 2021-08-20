@@ -1,11 +1,15 @@
 {{#partial "content"}}
-    <div class="container">
-    <div class="views animals">
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
         {{#if animals}}
             {{#each animals as |a|}}
-                <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">{{a.name}}</h5>
+                <div class="card mb-4 m-3 box-shadow">
+                        <img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                             src="/images/ani.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">
+                        <p class="card-text"><b>{{a.name}}</b></p>
                         <p class="card-text">{{a.type}}</p>
                         <p class="card-text">{{a.health}}</p>
                         <p class="card-text">{{a.age}}</p>
@@ -17,6 +21,7 @@
             <h2>No animals! Create some animals <a href="/create/animal">here</a></h2>
         {{/if}}
 
+            </div>
     </div>
     </div>
 {{/partial}}

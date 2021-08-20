@@ -1,10 +1,24 @@
 {{#partial "content"}}
+    <div style="" class="p-5 mb-5">
+        <div class="container pt-10 pb-12 pt-md-14 pb-md-16">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <!-- /nav -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row">
+            <div class="container">
             <div class="col-md-4">
                 {{#if locations}}
                     {{#each locations as |l|}}
                         <div class="entries">
+                            <p><b>Name:</b></p>
                             <p class="text" id={{l.id}}>{{l.name}}</p><br>
                             <a href="/view/location/sightings/{{l.id}}"><button class="btn btn-primary btn-md">View
                                 Sightings</button></a>
@@ -57,6 +71,7 @@
 
             {{/if}}
 
+        </div>
         </div>
         </div>
     </div>

@@ -1,8 +1,25 @@
 {{#partial "content"}}
-    <div class="form">
+    <div style="" class="p-5 mb-5">
+    <div class="container pt-10 pb-12 pt-md-14 pb-md-16">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <!-- /nav -->
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+    </div>
+    </div>
+    <div class="container">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Add Sightings </h4>
+            </div>
+            <div class="card-body">
+                           <div class="form">
         <form action="/create/sighting/new" method="post">
-            <h1>Create Sighting</h1>
-            <hr>
+
             <div class="form-group">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -56,6 +73,8 @@
             </div>
         </form>
     </div>
-
+            </div>
+        </div>
+    </div>
 {{/partial}}
 {{> layout.hbs}}
