@@ -158,6 +158,44 @@ public class App {
         },new HandlebarsTemplateEngine());
 
 
+        //sighting
+        get("/create/sighting",(request, response) -> {
+            Map<String,Object> model=new HashMap<String, Object>();
+            model.put("rangers",Rangers.all());
+            model.put("locations",Locations.all());
+            model.put("animals",Animals.all());
+            return new ModelAndView(model,"sighting-form.hbs");
+        },new HandlebarsTemplateEngine());
+
+        post("/create/sighting/new",(request, response) -> {
+            Map<String,Object> model=new HashMap<String, Object>();
+            int location_id= Integer.parseInt(request.queryParams("location"));
+            int ranger_id= Integer.parseInt(request.queryParams("ranger"));
+            int animal_id= Integer.parseInt(request.queryParams("animal"));
+
+            Sightings sighting=new Sightings(location_id,ranger_id,animal_id);
+            sighting.save();
+            return new ModelAndView(model,"sighting-form.hbs");
+        },new HandlebarsTemplateEngine());
+
+        get("/view/sightings",(request, response) -> {
+            Map<String,Object> model=new HashMap<String, Object>();
+            List<Sightings> sightings=Sightings.all();
+            ArrayList<String> animals=new ArrayList<String>();
+            ArrayList<String> types=new ArrayList<String>();
+            for (Sightings sighting : sightings){
+                String animal_name=Animals.find(sighting.getAnimal_id()).getName();
+                String animal_type=Animals.find(sighting.getAnimal_id()).getType();
+                animals.add(animal_name);
+                types.add(animal_type);
+            }
+            model.put("sightings",sightings);
+            model.put("animals",animals);
+            model.put("types",types);
+            return new ModelAndView(model,"sighting-view.hbs");
+        },new HandlebarsTemplateEngine());
+
+
 
     }
     }
