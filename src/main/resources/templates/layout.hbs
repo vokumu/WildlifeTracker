@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
+    <a class="navbar-brand" href="/">Wildlife Tracker</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,31 +21,48 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
             </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/" id="viewDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    View
+                    Animal
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/view/rangers">Ranger</a>
-                    <a class="dropdown-item" href="/view/animals">Animal</a>
-                    <a class="dropdown-item" href="/view/locations">Location</a>
-                    <a class="dropdown-item" href="/view/sightings">Sighting</a>
+                    <a class="dropdown-item" href="/view/animals">View</a>
+                    <a class="dropdown-item" href="/create/animal">Create</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/" id="createDropdown" role="button"
+                <a class="nav-link dropdown-toggle" href="/" id="viewDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Create
+                    Rangers
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/create/ranger">Ranger</a>
-                    <a class="dropdown-item" href="/create/animal">Animal</a>
-                    <a class="dropdown-item" href="/create/location">Location</a>
-                    <a class="dropdown-item" href="/create/sighting">Sighting</a>
+                    <a class="dropdown-item" href="/view/rangers">View</a>
+                    <a class="dropdown-item" href="/create/ranger">Create</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" id="viewDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Locations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/view/locations">View</a>
+                    <a class="dropdown-item" href="/create/location">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" id="viewDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sightings
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/view/sightings">View</a>
+                    <a class="dropdown-item" href="/create/sighting">Create</a>
+                </div>
+            </li>
+
+
         </ul>
     </div>
 </nav>
