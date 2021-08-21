@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SightingsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-21T08:41:21" hostname="denvar-HP-ENVY-x360-Convertible-13-y0XX" time="0.999">
+  <properties/>
+  <testcase name="findSightingByID" classname="SightingsTest" time="0.557"/>
+  <testcase name="createInstanceOfSightingsClass_true" classname="SightingsTest" time="0.058"/>
+  <testcase name="deleteAll" classname="SightingsTest" time="0.193"/>
+  <testcase name="allInstancesAreSaved" classname="SightingsTest" time="0.066"/>
+  <testcase name="deleteSightingByID" classname="SightingsTest" time="0.123"/>
+  <system-out><![CDATA[java.lang.IllegalArgumentException: All fields must be filled
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

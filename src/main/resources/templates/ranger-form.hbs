@@ -1,0 +1,45 @@
+{{#partial "content"}}
+    <div style="" class="p-5 mb-5">
+        <div class="container pt-10 pb-12 pt-md-14 pb-md-16">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <!-- /nav -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Add New Ranger </h4>
+            </div>
+            <div class="card-body">
+                <div class="form">
+                    <form action="/create/ranger/new" method="post">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Input Name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="badge">Badge Number</label>
+                            <input type="text" class="form-control form-control-lg" id="badge" name="badge" placeholder="Input Badge Number..."required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Input Phone Number..."
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg"> Create </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
