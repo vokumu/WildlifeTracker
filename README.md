@@ -5,7 +5,7 @@ This is a simple application that allows Rangers to track wildlife sightings in 
 # ScreenShort
 ![img.png](img.png)
 ## Application Link
-[link](https://wildlifetrackervicky.herokuapp.com//)
+[link](https://wildlifetrackervicky.herokuapp.com/)
 
 ## Author Information
 [Victoria Okumu](https://github.com/vokumu)
