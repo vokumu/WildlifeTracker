@@ -1,9 +1,12 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.sql2o.Sql2o;
-
+import java.net.URI;
+import java.net.URISyntaxException;
 public class DB {
-    //use the line below if you want to run locally replacing user with db username and pass with db password
-    public static Sql2o sql2o=new Sql2o("jdbc:postgresql://localhost:5432/wildlife_tracker", "denvar", "kenya@2020");
-    // The line below runs app on heroku comment the line below if you want to run your app locally these are my
-    // credentials so they  will not work for you
-    //public static Sql2o sql2o = new Sql2o( "jdbc:postgresql://ec2-34-200-72-77.compute-1.amazonaws.com:5432/dbdm5s1n8hejg", "lwkrvliubcpfda", "830bc954504472192aa7d9be1b7c1b4a1e5e06e0a1acb70d3507660c180bf5da");
-}
+    //public static Sql2o sql2o = new Sql2o("jdbc:postgresql://ec2-18-211-41-246.compute-1.amazonaws.com:5432/d6orupu6ca4o8m","jmibawcyjunppq","ec574f4c92cdb80d235426b083836cb6f3bd1b8e9eef80395c6aa4a8d4dbc07e");
+    public static Sql2o sql2o = new Sql2o("jdbc:postgresql://ec2-18-214-238-28.compute-1.amazonaws.com:5432/da7d70pm43spr7","buzonlhpartczi","b670e7f07b5b12334676089859c1e4a7af9bfe3b84e4011b101d04986cfcb12d");
+//    //    String connectionString = "jdbc:postgresql://@ec2-23-23-164-251.compute-1.amazonaws.com:5432/dfih1o8pai8045";
+////    Sql2o sql2o = new Sql2o(connectionString,"nhfwezodullugo","0aa74114bf808e5cc3ec83ce9d0a26c331d28b0270ca40c0d87c6284069e6eee");
+    }
+
