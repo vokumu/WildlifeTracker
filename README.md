@@ -4,7 +4,6 @@
 This is a simple application that allows Rangers to track wildlife sightings in Douglas Fir forest. Two main categories of animals are tracked the safe and endangered species.
 # ScreenShort
 ![img.png](img.png)
-![img.png](img.png)
 ## Application Link
 [link](https://wildlifetrackervicky.herokuapp.com//)
 
